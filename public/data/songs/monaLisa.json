@@ -1,0 +1,56 @@
+[
+  {
+    "id":1,
+    "lyric": "Min Mona Lisa, du og jeg\nGi' slip, la' din' tanker gå",
+    "start": 14,
+    "slut": 22
+  },
+  {
+        "id":2,
+    "lyric": "Ka' li' den her forbindelse\nHåber aldrig, at vi mister det",
+    "start": 34,
+    "slut": 43
+  },
+  {
+        "id":3,
+    "lyric": "La' os se, hvor langt vi ka' ta' den\nGå og kig' på stjerner, imens vi vandrer i natten",
+    "start": 52,
+    "slut": 63
+  },
+  {
+        "id":4,
+    "lyric": "Mærk sandet under din' fodsåler\nOs to, bader os i solstråler",
+    "start": 68,
+    "slut": 78
+  },
+  {
+        "id":5,
+    "lyric": "For det' så nemt bar' at finde fejl\nMen endnu nemmere at se, vi' ens, ligesom et spejl",
+    "start": 108,
+    "slut": 120
+  },
+  {
+        "id":6,
+    "lyric": "Så vi drikker rødvin, som vi ikk' ka' udtale\nOg gøre hjem'bane til udebane",
+    "start": 121,
+    "slut": 132
+  },
+  {
+        "id":7,
+    "lyric": "Jeg plejede at famle i blinde\nDu har noget, som ikk' så mange, de ka' finde",
+    "start": 139,
+    "slut": 149
+  },
+  {
+        "id":8,
+    "lyric": "Rejser til Amalfi, sikker på jeg faldt i\nDét her det' ikk' vanskeligt, nej",
+    "start": 156,
+    "slut": 166
+  },
+  {
+        "id":9,
+    "lyric": "Vi to, vi' stressfri, bevæg dig som en maskin'\nKa' du gøre dig klar på en halv time?",
+    "start": 167,
+    "slut": 177
+  }
+]

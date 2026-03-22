@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "TOP 10 FEB",
+    "albumCover": "feb10.jfif"
+  },
+  {
+    "id": 2,
+    "name" : "Monalisa - KESI",
+    "fileName": "monaLisa",
+    "albumCover": "monalisa.jpg",
+    "seconds" : 187,
+    "startValue":"93"
+  },
+  {
+    "id": 3,
+    "name": "GOATs of 2010's",
+    "albumCover": "goat.jpg"
+  }
+]

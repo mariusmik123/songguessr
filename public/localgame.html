@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SongGuessr</title>
+     <link rel="icon" type="image/x-icon" href="./Img/favicon.ico">
+    <link rel="stylesheet" href="css/localGame.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- LEFT SIDE PANEL -->
+      <aside class="sidePanel">
+        <button class="backBtn">← Back</button>
+
+        <div class="accountBox">
+          <div class="accountName">Marius</div>
+          <div class="crowns">👑 12</div>
+        </div>
+      </aside>
+
+      <!-- MAIN GAME AREA -->
+      <main class="gameArea">
+        <div class="topBar">
+          <h1 class="logo">SONGGUESSR</h1>
+          <button class="energyBtn">⚡ 3</button>
+        </div>
+
+        <div class="container js-guessingContainer" id="js-guessingContainer">
+          <div class="head js-head">
+            <div>
+              <h2 class="songTitle">Album Title</h2>
+              <div class="score js-score-question">SCORE 0000</div>
+            </div>
+            <div class="timer js-timer">19</div>
+          </div>
+
+          <div class="lyric js-lyric">
+            <p>
+              Lyrics to be loaded
+            </p>
+          </div>
+
+          <div class="guessSection">
+            <div class="timeDisplay">
+              <span>Your Guess:</span>
+              <span id="currentTime" class="currentTime"></span>
+            </div>
+
+            <input
+              type="range"
+              name="guess"
+              id="guess"
+              min="0"
+              max="240"
+              value="90"
+            />
+          </div>
+
+          <button class="submitBtn js-submitBtn">Submit</button>
+
+          
+        </div>
+
+        
+          <div class="container js-resultContainer hidden" id="js-resultContainer">
+
+            <div class="head">
+              <div>
+                <h2 class="songTitle js-songTitle">Album Title</h2>
+                <div class="score js-score">SCORE 0000</div>
+              </div>
+            </div>
+
+            <div class="lyric js-lyricResult">
+              <p>Lyrics to be loaded</p>
+            </div>
+
+            <div class="guessSection">
+
+              <div class="timeDisplay">
+                <span class="js-guessLabel">Your Guess:</span>
+              </div>
+
+              <div class="resultBar">
+
+                <div class="resultTrack"></div>
+
+                <div class="resultRange js-resultRange"></div>
+
+                <div class="resultGuess js-resultGuess"></div>
+
+              </div>
+
+            </div>
+
+            <button class="nextBtn js-nextBtn">Next</button>
+            
+            <button class="nextBtn js-finishBtn hidden">Finish</button>
+
+          </div>
+        
+
+                  
+          <div class="container js-finalContainer hidden" id="js-finalContainer">
+
+            <div class="head">
+              <div>
+                <h2 class="songTitle js-songTitle">Album Title</h2>
+              </div>
+            </div>
+            <div class="finalScore js-finalScore">SCORE 0000</div>
+            <div class="Highscore js-highscore">
+             Highscore to be loaded
+            </div>
+
+            <button class="playAgainBtn js-playAgainBtn">play again</button>
+            
+          </div>
+
+
+        <div class="questionCounter js-questionCounter">X of 6</div>
+      </main>
+    </div>
+    <script type="module" src="/js/localGame.js"></script>
+  </body>
+</html>
+
+<!--<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="navBar">
+      <button class="leftNavBar backBtn">BACK</button>
+      <h1 class="middleNavBar">SONGGUESSR</h1>
+      <button class="energyBtn rightNavBar">Energy X</button>
+    </div>
+
+    <div class="container">
+      <div class="head">
+        <h1>Mona Lisa - KESI</h1>
+        <div class="timer">19</div>
+      </div>
+      <div class="lyric">
+        <p>
+          For det' så nemt bar' at finde fejl Men endnu nemmere at se, vi' ens,
+          ligesom et spejl
+        </p>
+      </div>
+      <div>
+        <div><label for="guess">time</label>1:30</div>
+
+        <input type="range" name="guess" id="guess" />
+      </div>
+      <button>Submit</button>
+      <div class="questionCounter">1 of 6</div>
+    </div>
+  </body>
+</html>
+-->
