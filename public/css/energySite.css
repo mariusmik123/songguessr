@@ -1,0 +1,192 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  min-height: 100vh; /* 🔥 ændret fra height */
+  font-family: "Arial Black", sans-serif;
+  background: radial-gradient(circle at 20% 30%, #1b2735, #090a0f);
+  color: white;
+
+  overflow-x: hidden; /* 🔥 kun skjul side-scroll */
+}
+
+/* Stars */
+body::after {
+  content: "";
+  position: fixed; /* 🔥 så den ikke følger scroll */
+  width: 200%;
+  height: 200%;
+  background-image: radial-gradient(white 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.15;
+  animation: stars 60s linear infinite;
+  z-index: 0;
+}
+
+@keyframes stars {
+  from { transform: translateY(0); }
+  to { transform: translateY(-500px); }
+}
+
+/* NAVBAR */
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 30px;
+  z-index: 10;
+}
+
+/* BACK BUTTON */
+.backBtn {
+  background: transparent;
+  border: 3px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.backBtn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+/* ENERGY DISPLAY */
+.energyBtn {
+  border: 3px solid #00ffcc;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc55;
+}
+
+/* MAIN CONTAINER */
+.energy-container {
+  margin-top: 120px; /* 🔥 plads under navbar */
+  padding-bottom: 80px; /* 🔥 luft i bunden */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px; /* 🔥 mere spacing */
+
+  z-index: 1;
+  position: relative;
+}
+
+/* TITLE */
+.title {
+  font-size: 60px;
+  letter-spacing: 6px;
+  text-shadow: 0 0 15px rgba(255,255,255,0.5);
+
+  margin-bottom: 20px; /* 🔥 ekstra luft */
+}
+
+/* ACTION BUTTONS */
+.energy-actions {
+  display: flex;
+  gap: 40px; /* 🔥 mere spacing */
+  flex-wrap: wrap; /* 🔥 bedre på små skærme */
+  justify-content: center;
+}
+
+/* GENERAL ENERGY BUTTON */
+.energy-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 30px 50px; /* 🔥 større */
+  border-radius: 20px;
+  font-size: 20px;
+  border: 4px solid white;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+/* SUB TEXT */
+.energy-btn .sub {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: 10px;
+}
+
+/* PRIMARY */
+.energy-btn.primary {
+  border-color: #00ffcc;
+  color: #00ffcc;
+}
+
+.energy-btn.primary:hover {
+  background: #00ffcc;
+  color: black;
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+/* SECONDARY */
+.energy-btn.secondary {
+  border-color: #ffaa00;
+  color: #ffaa00;
+}
+
+.energy-btn.secondary:hover {
+  background: #ffaa00;
+  color: black;
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #ffaa00;
+}
+
+/* INFO SECTION */
+.info-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* TITLE */
+.info-section h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  opacity: 0.9;
+}
+
+/* INFO CARDS */
+.info-card {
+  margin: 15px 0;
+  padding: 20px 30px;
+  border-radius: 15px;
+  background: rgba(255,255,255,0.08);
+  border: 2px solid rgba(255,255,255,0.2);
+  backdrop-filter: blur(5px);
+  transition: 0.25s;
+}
+
+.info-card span {
+  display: block;
+  font-size: 14px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+  background: rgba(255,255,255,0.15);
+}

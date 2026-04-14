@@ -71,7 +71,8 @@ body::after {
   transform: scale(1.05);
 }
 
-/* Energy badge */
+
+/* ENERGY */
 .energy {
   border: 4px solid #00ffcc;
   padding: 12px 24px;
@@ -79,7 +80,22 @@ body::after {
   color: #00ffcc;
   font-size: 22px;
   letter-spacing: 2.5px;
+
   box-shadow: 0 0 12px #00ffcc55;
+  cursor: pointer;
+
+  transition: all 0.25s ease;
+}
+
+.energy:hover {
+  background: #00ffcc;
+  color: #001a17;
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+.energy:active {
+  transform: scale(0.95);
 }
 
 /* =========================

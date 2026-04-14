@@ -1,3 +1,13 @@
+import { getUserById, updateEnergy, updateUserUI, spendEnergy } from "./helperFunctions/userCalls.js"
+// account ?? - yes
+let user;
+const userID = localStorage.getItem("userID")
+
+updateEnergy(userID)
+
+user = await spendEnergy(userID)
+updateUserUI(user)
+
 
 function getSongFile(){
   let params = new URLSearchParams(document.location.search)
@@ -260,7 +270,7 @@ window.location.reload()
 // back to main menu
 const backBtn = document.querySelector(".backBtn");
 backBtn.addEventListener("click",  () => {
-  
+updateEnergy(user)
 window.location.href = "localGameSelecter.html"
 
 });

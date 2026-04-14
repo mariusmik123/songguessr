@@ -1,3 +1,12 @@
+import { energyCheck } from "./helperFunctions/userCalls.js";
+
+// getting userenergy
+const user = JSON.parse(localStorage.getItem("user"))
+console.log(user)
+document.querySelector(".energy").textContent = `⚡ ENERGY ${user.energyCount}`
+
+
+
 // back to main menu
 const backBtn = document.querySelector(".js-backBtn");
 backBtn.addEventListener("click", () => {
@@ -18,7 +27,10 @@ function findOptionById(options, optionId) {
 async function addEventListeners(albums) {
   const options = document.querySelectorAll(".js-option");
   options.forEach((option) => {
-    option.addEventListener("click", () => {
+    option.addEventListener("click", async () => {
+      const stop = await energyCheck(user.userID)
+      if (stop) {return}
+
       const optionId = option.dataset.albumOption;
       const a = findOptionById(albums, optionId);
       console.log(a);
@@ -48,3 +60,10 @@ async function renderAlbumOptions() {
 }
 
 renderAlbumOptions();
+
+
+// linker til energysite
+const energyBtn = document.querySelector(".js-energyBtn")
+energyBtn.addEventListener("click", ()=>{
+   window.location.href = "energySite.html"
+})
